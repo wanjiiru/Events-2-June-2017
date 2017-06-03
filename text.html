@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+	font-family: arial, helvetica, freesans, sans-serif;
+	font-size: 100%;
+	color: #333;
+	background-color: #ddd;
+}
+
+h1
+{
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 0;
+	color:#800000
+}
+
+
+fieldset
+{
+	padding: 10px;
+	border-radius: 10px;
+}
+
+label, input, button
+{
+	display: block;
+	width: 80%;
+	font-size: 1em;
+	text-align: center;
+	margin: 2px auto;
+	color:#000000	
+}
+
+button
+{
+	width: 10em;
+	font-weight: bold;
+	color:#808080	
+}
+div {
+    background-color:lightblue;
+    border: 1px solid;
+    padding: 50px;
+}
+</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript Events</title>
+</head>
+<body>
+<div class="top-bar">
+      <div class="top-bar-right">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Js Events</li>
+          <li> <a href="">Custom Events</a> </li>
+          <li><a href="">Built-in Events</a>
+          </li>
+          <li><a href="">Promises</a></li
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
+
+  <h1>Click the button to display the date.</h1>
+    <button onclick="displayDate()">The time is?</button>
+      <p id="demo"></p>
+
+   <hr>
+   <p>Custom Js Events</p>
+       <form id="msgbox" action="#" method="get">
+            <label for="msg">Your message</label>
+              <input id="msg" value="" />
+               <button id="send">SEND</button>
+             </form>
+
+
+  <p>This example demonstrates the difference between bubbling and capturing when adding event listeners.</p>
+    <div id="myDiv">
+      <p id="myP">Click this paragraph, I am Bubbling.</p>
+    </div>
+ <hr>
+
+  <div id="myDiv2">
+    <p id="myP2">Click this paragraph, I am Capturing.</p>
+</div>
+
+<hr>
+
+<button id="test">test</button>
+
+<form>
+  <fieldset class="fieldset">
+    <legend>Feedback</legend>
+
+    <div class="row">
+
+    <div id="contactForm" class="small-8 medium-8 large-8 columns">
+      <form id="myForm" method="post" data-abide>  
+          
+          <label>Name</label>
+          <small class="error">Your full name is required.</small>
+          <input type="text" placeholder="Full Name" required>
+          
+          <label>Email</label>
+          <small class="error">An email address is required.</small>
+
+          <input type="email" placeholder="username@address.com" required>
+          
+          <label>Web Address</label>          
+          <input type="url" placeholder="http://www.url.com">
+          
+          <label>Your Message</label>
+          <small class="error">Your message is required.</small>
+          <textarea placeholder="Enter your message here" required></textarea>
+          
+        <input type="submit" class="nice blue radius button" value="Send Message"></button></a>
+
+        </form>
+    </div><!--end 8 columns-->
+    <div class="footer">
+<div id="footer">
+<p>&copy; Wanjiiru, 2017</p>
+</div> <!-- close footer -->
+</div>
+
+<script src="index.js"></script>
+
+
+</body>
+</html>
